@@ -6,13 +6,13 @@
 <title>
   Class: Discordrb::Components::MediaItem
   
-    &mdash; Documentation by YARD 0.9.39
+    &mdash; Documentation by YARD 0.9.44
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "Discordrb::Components::MediaItem";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/discordrb/data/component.rb</dd>
+    <dd>lib/discordrb/data/component.rb
+</dd>
   </dl>
   
 </div>
@@ -103,6 +106,24 @@
   <div class="discussion">
     <p>Resolved metadata about a piece of media.</p>
 
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="FLAGS-constant" class="">FLAGS =
+          <div class="docstring">
+  <div class="discussion">
+    <p>Mapping of flags.</p>
 
   </div>
 </div>
@@ -110,6 +131,14 @@
   
 
 </div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span>
+  <span class='label'>animated:</span> <span class='int'>1</span> <span class='op'>&lt;&lt;</span> <span class='int'>0</span>
+<span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+    </dl>
+  
+
 
 
 
@@ -138,8 +167,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The ID of the uploaded attachment.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The ID of the uploaded attachment.</p></div></span>
   
 </li>
 
@@ -166,8 +194,34 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The content type of the media item.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The content type of the media item.</p></div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#flags-instance_method" title="#flags (instance method)">#<strong>flags</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The flags of the media item.</p></div></span>
   
 </li>
 
@@ -194,8 +248,61 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The height of the media item.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The height of the media item.</p></div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#placeholder-instance_method" title="#placeholder (instance method)">#<strong>placeholder</strong>  &#x21d2; String<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The placeholder of the media item.</p></div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#placeholder_version-instance_method" title="#placeholder_version (instance method)">#<strong>placeholder_version</strong>  &#x21d2; Integer<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>The version of the thumbhash for images and videos, if any.</p></div></span>
   
 </li>
 
@@ -222,8 +329,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The proxied URL to the media item.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The proxied URL to the media item.</p></div></span>
   
 </li>
 
@@ -250,8 +356,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The URL to the media item.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The URL to the media item.</p></div></span>
   
 </li>
 
@@ -278,8 +383,7 @@
   
 
   
-    <span class="summary_desc"><div class='inline'><p>The width of the media item.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'><p>The width of the media item.</p></div></span>
   
 </li>
 
@@ -288,6 +392,40 @@
 
 
 
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#animated%3F-instance_method" title="#animated? (instance method)">#<strong>animated?</strong>  &#x21d2; true, false </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Whether or not the media item is animated.</p></div></span>
+  
+</li>
+
+      
+    </ul>
+    
+  
 
 
   <div id="instance_attr_details" class="attr_details">
@@ -309,7 +447,6 @@
     <p>Returns the ID of the uploaded attachment. Only present
 when the media item was uploaded via an <code>attachment://&lt;filename&gt;</code> reference.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -326,8 +463,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
         &mdash;
         <div class='inline'><p>the ID of the uploaded attachment. Only present
-when the media item was uploaded via an <code>attachment://&lt;filename&gt;</code> reference.</p>
-</div>
+when the media item was uploaded via an <code>attachment://&lt;filename&gt;</code> reference.</p></div>
       
     </li>
   
@@ -339,12 +475,12 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-466
-467
-468</pre>
+477
+478
+479</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 466</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 477</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_attachment_id'>attachment_id</span>
   <span class='ivar'>@attachment_id</span>
@@ -369,7 +505,6 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   <div class="discussion">
     <p>Returns the content type of the media item.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -385,8 +520,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
       
         &mdash;
-        <div class='inline'><p>the content type of the media item.</p>
-</div>
+        <div class='inline'><p>the content type of the media item.</p></div>
       
     </li>
   
@@ -398,15 +532,72 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-462
-463
-464</pre>
+473
+474
+475</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 462</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 473</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_content_type'>content_type</span>
   <span class='ivar'>@content_type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="flags-instance_method">
+  
+    #<strong>flags</strong>  &#x21d2; <tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the flags of the media item.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>the flags of the media item.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+458
+459
+460</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 458</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_flags'>flags</span>
+  <span class='ivar'>@flags</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -428,6 +619,119 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   <div class="discussion">
     <p>Returns the height of the media item.</p>
 
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>the height of the media item.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+464
+465
+466</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 464</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_height'>height</span>
+  <span class='ivar'>@height</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="placeholder-instance_method">
+  
+    #<strong>placeholder</strong>  &#x21d2; <tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt><sup>?</sup>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the placeholder of the media item.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../String.html" title="String (class)">String</a></span></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>the placeholder of the media item.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+470
+471
+472</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 470</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_placeholder'>placeholder</span>
+  <span class='ivar'>@placeholder</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="placeholder_version-instance_method">
+  
+    #<strong>placeholder_version</strong>  &#x21d2; <tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt><sup>?</sup>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns the version of the thumbhash for images and videos, if any.</p>
 
   </div>
 </div>
@@ -444,8 +748,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
       
         &mdash;
-        <div class='inline'><p>the height of the media item.</p>
-</div>
+        <div class='inline'><p>the version of the thumbhash for images and videos, if any.</p></div>
       
     </li>
   
@@ -457,15 +760,15 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-456
-457
-458</pre>
+480
+481
+482</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 456</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 480</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_height'>height</span>
-  <span class='ivar'>@height</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_placeholder_version'>placeholder_version</span>
+  <span class='ivar'>@placeholder_version</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -487,7 +790,6 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   <div class="discussion">
     <p>Returns the proxied URL to the media item.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -503,8 +805,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
       
         &mdash;
-        <div class='inline'><p>the proxied URL to the media item.</p>
-</div>
+        <div class='inline'><p>the proxied URL to the media item.</p></div>
       
     </li>
   
@@ -516,12 +817,12 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-459
-460
-461</pre>
+467
+468
+469</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 459</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 467</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_proxy_url'>proxy_url</span>
   <span class='ivar'>@proxy_url</span>
@@ -546,7 +847,6 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   <div class="discussion">
     <p>Returns the URL to the media item.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -562,8 +862,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
       
         &mdash;
-        <div class='inline'><p>the URL to the media item.</p>
-</div>
+        <div class='inline'><p>the URL to the media item.</p></div>
       
     </li>
   
@@ -575,12 +874,12 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-450
-451
-452</pre>
+455
+456
+457</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 450</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 455</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_url'>url</span>
   <span class='ivar'>@url</span>
@@ -605,7 +904,6 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   <div class="discussion">
     <p>Returns the width of the media item.</p>
 
-
   </div>
 </div>
 <div class="tags">
@@ -621,8 +919,7 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       
       
         &mdash;
-        <div class='inline'><p>the width of the media item.</p>
-</div>
+        <div class='inline'><p>the width of the media item.</p></div>
       
     </li>
   
@@ -634,12 +931,12 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
       <pre class="lines">
 
 
-453
-454
-455</pre>
+461
+462
+463</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 453</span>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 461</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_width'>width</span>
   <span class='ivar'>@width</span>
@@ -652,12 +949,77 @@ when the media item was uploaded via an <code>attachment://&lt;filename&gt;</cod
   </div>
 
 
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="animated?-instance_method">
+  
+    #<strong>animated?</strong>  &#x21d2; <tt>true</tt>, <tt>false</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Returns whether or not the media item is animated.</p>
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>whether or not the media item is animated.</p></div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+498
+499
+500
+501
+502</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/discordrb/data/component.rb', line 498</span>
+
+<span class='const'><span class='object_link'><a href="#FLAGS-constant" title="Discordrb::Components::MediaItem::FLAGS (constant)">FLAGS</a></span></span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+  <span class='id identifier rubyid_define_method'>define_method</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>?</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='ivar'>@flags</span><span class='period'>.</span><span class='id identifier rubyid_anybits?'>anybits?</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
 </div>
 
       <div id="footer">
-  Generated on Mon Apr 13 02:53:10 2026 by
+  Generated on Sun Jun  7 12:25:35 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.39 (ruby-3.3.11).
+  0.9.44 (ruby-3.3.11).
 </div>
 
     </div>
